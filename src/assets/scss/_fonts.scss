@@ -1,0 +1,95 @@
+@font-face {
+    font-family: FiraSans;
+    font-weight: 400;
+    src: url('../fonts/FiraSans-Regular.ttf') format("truetype");
+}
+@font-face {
+    font-family: FiraSans;
+    font-weight: 500;
+    src: url('../fonts/FiraSans-Medium.ttf') format("truetype");
+}
+@font-face {
+    font-family: FiraSans;
+    font-weight: 600;
+    src: url('../fonts/FiraSans-SemiBold.ttf') format("truetype");
+}
+@font-face {
+    font-family: FiraSans;
+    font-weight: 700;
+    src: url('../fonts/FiraSans-Bold.ttf') format("truetype");
+}
+
+
+$icomoon-font-family: "icomoon" !default;
+$icomoon-font-path: "fonts" !default;
+
+$icon-delete: "\e906";
+$icon-block: "\e900";
+$icon-close: "\e901";
+$icon-help: "\e902";
+$icon-Icon: "\e903";
+$icon-plus: "\e904";
+$icon-unblock: "\e905";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('../#{$icomoon-font-path}/#{$icomoon-font-family}.eot?p0gmkt');
+  src:  url('../#{$icomoon-font-path}/#{$icomoon-font-family}.eot?p0gmkt#iefix') format('embedded-opentype'),
+    url('../#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?p0gmkt') format('truetype'),
+    url('../#{$icomoon-font-path}/#{$icomoon-font-family}.woff?p0gmkt') format('woff'),
+    url('../#{$icomoon-font-path}/#{$icomoon-font-family}.svg?p0gmkt##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-delete {
+  &:before {
+    content: $icon-delete; 
+  }
+}
+.icon-block {
+  &:before {
+    content: $icon-block; 
+  }
+}
+.icon-close {
+  &:before {
+    content: $icon-close; 
+  }
+}
+.icon-help {
+  &:before {
+    content: $icon-help; 
+  }
+}
+.icon-Icon {
+  &:before {
+    content: $icon-Icon; 
+  }
+}
+.icon-plus {
+  &:before {
+    content: $icon-plus; 
+  }
+}
+.icon-unblock {
+  &:before {
+    content: $icon-unblock; 
+  }
+}
+
